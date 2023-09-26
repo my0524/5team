@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-family: "NanumSquareNeo" !important;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid gray !important;
+}
+header div.inner {
+  width: min(95%, 1248px);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div.inner h1.logo {
+  width: 20%;
+}
+header div.inner nav.gnb {
+  width: 80%;
+}
+header div.inner nav.gnb ul {
+  display: flex;
+}
+header div.inner nav.gnb ul li {
+  width: 20%;
+  flex-grow: 1;
+}/*# sourceMappingURL=common.css.map */
