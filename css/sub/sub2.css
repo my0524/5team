@@ -1,1 +1,862 @@
-/*# sourceMappingURL=sub2.css.map */
+@charset "UTF-8";
+body {
+  margin: 0 0;
+}
+body main.hn_main {
+  width: 100%;
+  background: #f7f7f8;
+}
+body main.hn_main div.hn_nav_wrap {
+  border-bottom: 1px solid #DDD;
+}
+body main.hn_main div.hn_nav_wrap nav.hn_nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: min(95%, 1200px);
+  color: #AAA;
+}
+body main.hn_main div.hn_nav_wrap nav.hn_nav i {
+  font-size: 12px;
+}
+body main.hn_main div.hn_nav_wrap nav.hn_nav p.hn_menuname {
+  margin: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+}
+body main.hn_main div.hn_nav_wrap nav.hn_nav p.hn_menuname:not(:last-of-type)::after {
+  content: ">";
+  margin-left: 10px;
+}
+body main.hn_main div.hn_nav_wrap nav.hn_nav p.hn_menuname:last-of-type {
+  font-weight: 600;
+  color: #000;
+}
+body main.hn_main div.hn_content {
+  padding: 50px 0;
+}
+body main.hn_main div.hn_content div.hn_process {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: min(95%, 1200px);
+}
+body main.hn_main div.hn_content div.hn_process h2 {
+  font-size: 23px;
+  font-weight: 800;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_first_row {
+  display: flex;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_first_row figure {
+  position: relative;
+  flex: 1;
+  margin: 0 0; /* 왜 또 해줘야하는가? 휴... */
+  height: 145px;
+  text-align: center;
+  border: 2px solid blue;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_first_row figure:not(:last-of-type) {
+  margin-right: 34px;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_first_row figure:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: calc(50% - 10px);
+  right: -34px;
+  width: 30px;
+  height: 20px;
+  background: url(../hn_img/ico_dgm_arrow.png) center center no-repeat;
+  box-sizing: border-box;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_first_row figure:last-of-type::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: calc(100% + 2px);
+  right: calc(50% - 10px);
+  width: 20px;
+  height: 50px;
+  background: url(../hn_img/ico_dgm_arrow_2.png) center center no-repeat;
+  box-sizing: border-box;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span { /* 이게 최선인가.... */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span i {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span i img {
+  height: 100%;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span figcaption {
+  margin-top: 10px;
+  font-weight: 600;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_second_row {
+  display: flex;
+  margin-top: 54px;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_second_row figure {
+  position: relative;
+  flex: 1;
+  margin: 0 0; /* 왜 또 해줘야하는가? 휴... */
+  height: 145px;
+  text-align: center;
+  border: 2px solid blue;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_second_row figure:not(:last-of-type) {
+  margin-right: 34px;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_second_row figure:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: calc(50% - 10px);
+  right: -34px;
+  width: 30px;
+  height: 20px;
+  transform: rotateY(180deg);
+  background: url(../hn_img/ico_dgm_arrow.png) center center no-repeat;
+  box-sizing: border-box;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span { /* 이게 최선인가.... */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span i {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span i img {
+  height: 100%;
+}
+body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span figcaption {
+  margin-top: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+body main.hn_main div.hn_content div.hn_info_wrap {
+  margin: 30px 0;
+}
+body main.hn_main div.hn_content div.hn_info_wrap div.hn_info {
+  width: min(95%, 1200px);
+  margin: 0 auto;
+}
+body main.hn_main div.hn_content div.hn_info_wrap div.hn_info p {
+  margin-bottom: 10px;
+  font-size: 14.5px;
+  color: #676767;
+}
+body main.hn_main div.hn_content div.hn_info_wrap div.hn_info p::before {
+  content: url(../hn_img/bull_check.png);
+  margin-right: 5px;
+}
+body main.hn_main div.hn_content ul.hn_score_box {
+  width: min(95%, 1200px);
+  margin: 0 auto;
+  padding: 30px 50px;
+  background: #FFF;
+  box-sizing: border-box;
+}
+body main.hn_main div.hn_content ul.hn_score_box li:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+body main.hn_main div.hn_content ul.hn_score_box li::marker {
+  color: #666;
+}
+body main.hn_main div.hn_content ul.hn_score_box li:nth-of-type(odd) {
+  font-weight: 600;
+}
+body main.hn_main div.hn_content ul.hn_score_box li:nth-of-type(2) {
+  color: #666;
+}
+body main.hn_main div.hn_content div.hn_standard {
+  width: min(95%, 1200px);
+  margin: 0 auto;
+  padding-top: 50px;
+}
+body main.hn_main div.hn_content div.hn_standard h2 {
+  font-size: 23px;
+  font-weight: 800;
+}
+body main.hn_main div.hn_content div.hn_standard table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-top: 2px solid #000;
+}
+body main.hn_main div.hn_content div.hn_standard table tr:last-child th {
+  border-bottom: 1px solid #f1f1f3;
+}
+body main.hn_main div.hn_content div.hn_standard table tr th, body main.hn_main div.hn_content div.hn_standard table tr td {
+  box-sizing: border-box;
+}
+body main.hn_main div.hn_content div.hn_standard table tr th {
+  width: 25%;
+  background: #f1f1f3;
+  border-bottom: 1px solid #FFF;
+}
+body main.hn_main div.hn_content div.hn_standard table tr td {
+  padding: 25px 30px;
+  color: #555;
+  font-size: 15px;
+  background: #FFF;
+  border-bottom: 1px solid #f1f1f3;
+}
+body main.hn_main div.hn_content div.hn_detail_standard {
+  width: min(95%, 1200px);
+  margin: 0 auto;
+  padding: 50px 0;
+}
+body main.hn_main div.hn_content div.hn_detail_standard h2 {
+  font-size: 23px;
+  font-weight: 800;
+}
+body main.hn_main div.hn_content div.hn_detail_standard table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-top: 2px solid #000;
+}
+body main.hn_main div.hn_content div.hn_detail_standard table tr:last-child th {
+  border-bottom: 1px solid #f1f1f3;
+}
+body main.hn_main div.hn_content div.hn_detail_standard table tr th, body main.hn_main div.hn_content div.hn_detail_standard table tr td {
+  box-sizing: border-box;
+}
+body main.hn_main div.hn_content div.hn_detail_standard table tr th {
+  width: 25%;
+  background: #f1f1f3;
+  border-bottom: 1px solid #FFF;
+}
+body main.hn_main div.hn_content div.hn_detail_standard table tr td {
+  width: calc(75% - 200px);
+  padding: 25px 0;
+  color: #555;
+  font-size: 15px;
+  background: #FFF;
+  border-bottom: 1px solid #f1f1f3;
+}
+body main.hn_main div.hn_content div.hn_detail_standard table tr td:first-of-type {
+  width: 200px;
+  text-align: center;
+}
+
+@media screen and (max-width:1100px) {
+  body {
+    margin: 0 0;
+  }
+  body main.hn_main {
+    width: 100%;
+    background: #f7f7f8;
+  }
+  body main.hn_main div.hn_nav_wrap {
+    border-bottom: 1px solid #DDD;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: min(95%, 1200px);
+    color: #AAA;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav i {
+    font-size: 12px;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav p.hn_menuname {
+    margin: 0 5px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav p.hn_menuname:not(:last-of-type)::after {
+    content: ">";
+    margin-left: 10px;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav p.hn_menuname:last-of-type {
+    font-weight: 600;
+    color: #000;
+  }
+  body main.hn_main div.hn_content {
+    padding: 50px 0;
+  }
+  body main.hn_main div.hn_content div.hn_process {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: min(95%, 1200px);
+  }
+  body main.hn_main div.hn_content div.hn_process h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row {
+    display: flex;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure {
+    position: relative;
+    flex: 1;
+    margin: 0 0; /* 왜 또 해줘야하는가? 휴... */
+    height: 145px;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure:not(:last-of-type) {
+    margin-right: 34px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: calc(50% - 10px);
+    right: -25px;
+    width: 8px;
+    height: 20px;
+    background: url(../hn_img/ico_dgm_arrow.png) right center no-repeat;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure:last-of-type::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: calc(100% + 15px);
+    right: calc(50% - 10px);
+    width: 20px;
+    height: 8px;
+    background: url(../hn_img/ico_dgm_arrow_2.png) bottom center no-repeat;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span { /* 이게 최선인가.... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span i {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span i img {
+    height: 100%;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span figcaption {
+    margin-top: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row {
+    display: flex;
+    margin-top: 35px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure {
+    position: relative;
+    flex: 1;
+    margin: 0 0; /* 왜 또 해줘야하는가? 휴... */
+    height: 145px;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure:not(:last-of-type) {
+    margin-right: 34px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: calc(50% - 10px);
+    right: -23px;
+    width: 9px;
+    height: 20px;
+    transform: rotateY(180deg);
+    background: url(../hn_img/ico_dgm_arrow.png) right center no-repeat;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span { /* 이게 최선인가.... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span i {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span i img {
+    height: 100%;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span figcaption {
+    margin-top: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  body main.hn_main div.hn_content div.hn_info_wrap {
+    margin: 30px 0;
+  }
+  body main.hn_main div.hn_content div.hn_info_wrap div.hn_info {
+    width: min(95%, 1200px);
+    margin: 0 auto;
+  }
+  body main.hn_main div.hn_content div.hn_info_wrap div.hn_info p {
+    margin-bottom: 10px;
+    font-size: 14.5px;
+    color: #676767;
+  }
+  body main.hn_main div.hn_content div.hn_info_wrap div.hn_info p::before {
+    content: url(../hn_img/bull_check.png);
+    margin-right: 5px;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box {
+    width: min(95%, 1200px);
+    margin: 0 auto;
+    padding: 30px 50px;
+    font-size: 15px;
+    background: #FFF;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box li:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box li::marker {
+    color: #666;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box li:nth-of-type(odd) {
+    font-weight: 600;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box li:nth-of-type(2) {
+    color: #666;
+  }
+  body main.hn_main div.hn_content div.hn_standard {
+    width: min(95%, 1200px);
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  body main.hn_main div.hn_content div.hn_standard h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  body main.hn_main div.hn_content div.hn_standard div table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-break: keep-all;
+    border-top: 2px solid #000;
+  }
+  body main.hn_main div.hn_content div.hn_standard div table tr:last-child th {
+    border-bottom: 1px solid #f1f1f3;
+  }
+  body main.hn_main div.hn_content div.hn_standard div table tr th, body main.hn_main div.hn_content div.hn_standard div table tr td {
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_standard div table tr th {
+    width: 25%;
+    font-size: 14px;
+    background: #f1f1f3;
+    border-bottom: 1px solid #FFF;
+  }
+  body main.hn_main div.hn_content div.hn_standard div table tr td {
+    padding: 25px 10px;
+    color: #555;
+    font-size: 14px;
+    background: #FFF;
+    border-bottom: 1px solid #f1f1f3;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard {
+    width: min(95%, 1200px);
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard div {
+    overflow: auto;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard div table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-break: keep-all;
+    border-top: 2px solid #000;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard div table tr:last-child th {
+    border-bottom: 1px solid #f1f1f3;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard div table tr th, body main.hn_main div.hn_content div.hn_detail_standard div table tr td {
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard div table tr th {
+    width: 25%;
+    font-size: 14px;
+    background: #f1f1f3;
+    border-bottom: 1px solid #FFF;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard div table tr td {
+    width: calc(75% - 150px);
+    padding: 25px 0;
+    color: #555;
+    font-size: 14px;
+    background: #FFF;
+    border-bottom: 1px solid #f1f1f3;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard div table tr td:first-of-type {
+    width: 150px;
+    text-align: center;
+  }
+}
+@media screen and (max-width:768px) {
+  body {
+    margin: 0 0;
+  }
+  body main.hn_main {
+    width: 100%;
+    background: #f7f7f8;
+  }
+  body main.hn_main div.hn_nav_wrap {
+    border-bottom: 1px solid #DDD;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: min(95%, 1200px);
+    color: #AAA;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav i {
+    font-size: 12px;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav p.hn_menuname {
+    margin: 0 5px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav p.hn_menuname:not(:last-of-type)::after {
+    content: ">";
+    margin-left: 10px;
+  }
+  body main.hn_main div.hn_nav_wrap nav.hn_nav p.hn_menuname:last-of-type {
+    font-weight: 600;
+    color: #000;
+  }
+  body main.hn_main div.hn_content {
+    padding: 50px 0;
+  }
+  body main.hn_main div.hn_content div.hn_process {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: min(95%, 1200px);
+  }
+  body main.hn_main div.hn_content div.hn_process h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row {
+    display: block;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure {
+    position: relative;
+    flex: 1;
+    margin: 15px 0; /* 왜 또 해줘야하는가? 휴... */
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure:not(:last-of-type) {
+    margin-right: 34px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 42px;
+    bottom: -10px;
+    right: calc(50% - 4.5px);
+    width: 9px;
+    height: 20px;
+    transform: rotate(90deg);
+    background: url(../hn_img/ico_dgm_arrow.png) right center no-repeat;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure:last-of-type::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 42px;
+    bottom: -10px;
+    right: calc(50% - 4.5px);
+    width: 9px;
+    height: 20px;
+    transform: rotate(90deg);
+    background: url(../hn_img/ico_dgm_arrow.png) right center no-repeat;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span { /* 이게 최선인가.... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span i {
+    display: none;
+    width: 60px;
+    height: 60px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span i img {
+    height: 100%;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span figcaption {
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: normal;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_first_row figure span figcaption br {
+    display: none !important;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row {
+    display: block;
+    margin-top: 0;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure {
+    position: relative;
+    flex: 1;
+    margin: 0 0 15px 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure:not(:last-of-type) {
+    margin-right: 34px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 42px;
+    bottom: -10px;
+    right: calc(50% - 4.5px);
+    width: 9px;
+    height: 20px;
+    transform: rotate(90deg);
+    background: url(../hn_img/ico_dgm_arrow.png) right center no-repeat;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span { /* 이게 최선인가.... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span i {
+    display: none;
+    width: 60px;
+    height: 60px;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span i img {
+    height: 100%;
+  }
+  body main.hn_main div.hn_content div.hn_process div.hn_second_row figure span figcaption {
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  body main.hn_main div.hn_content div.hn_info_wrap {
+    margin: 30px 0;
+  }
+  body main.hn_main div.hn_content div.hn_info_wrap div.hn_info {
+    width: min(95%, 1200px);
+    margin: 0 auto;
+  }
+  body main.hn_main div.hn_content div.hn_info_wrap div.hn_info p {
+    margin-bottom: 10px;
+    font-size: 14.5px;
+    color: #676767;
+  }
+  body main.hn_main div.hn_content div.hn_info_wrap div.hn_info p::before {
+    content: url(../hn_img/bull_check.png);
+    margin-right: 5px;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box {
+    width: min(95%, 1200px);
+    margin: 0 auto;
+    padding: 30px 50px;
+    background: #FFF;
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box li:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box li::marker {
+    color: #666;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box li:nth-of-type(odd) {
+    font-weight: 600;
+  }
+  body main.hn_main div.hn_content ul.hn_score_box li:nth-of-type(2) {
+    color: #666;
+  }
+  body main.hn_main div.hn_content div.hn_standard {
+    width: min(95%, 1200px);
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  body main.hn_main div.hn_content div.hn_standard h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  body main.hn_main div.hn_content div.hn_standard div.hn_table1 table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-top: 2px solid #000;
+  }
+  body main.hn_main div.hn_content div.hn_standard div.hn_table1 table tr:last-child th {
+    border-bottom: 1px solid #f1f1f3;
+  }
+  body main.hn_main div.hn_content div.hn_standard div.hn_table1 table tr th, body main.hn_main div.hn_content div.hn_standard div.hn_table1 table tr td {
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_standard div.hn_table1 table tr th {
+    width: 25%;
+    font-size: 14px;
+    background: #f1f1f3;
+    border-bottom: 1px solid #FFF;
+  }
+  body main.hn_main div.hn_content div.hn_standard div.hn_table1 table tr td {
+    padding: 25px 10px;
+    color: #555;
+    font-size: 14px;
+    background: #FFF;
+    border-bottom: 1px solid #f1f1f3;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard {
+    width: min(95%, 1200px);
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-top: 2px solid #000;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard table tr:last-child th {
+    border-bottom: 1px solid #f1f1f3;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard table tr th, body main.hn_main div.hn_content div.hn_detail_standard table tr td {
+    box-sizing: border-box;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard table tr th {
+    width: 25%;
+    font-size: 14px;
+    background: #f1f1f3;
+    border-bottom: 1px solid #FFF;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard table tr td {
+    padding: 25px 0;
+    color: #555;
+    font-size: 14px;
+    background: #FFF;
+    border-bottom: 1px solid #f1f1f3;
+  }
+  body main.hn_main div.hn_content div.hn_detail_standard table tr td:first-of-type {
+    width: 60px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  div.hn_standard {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  div.hn_standard h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  div.hn_standard div.hn_table1 {
+    overflow-x: scroll;
+  }
+  div.hn_standard div.hn_table1 table {
+    width: 100%;
+    min-width: 599px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-top: 2px solid #000;
+  }
+  div.hn_detail_standard {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  div.hn_detail_standard h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  div.hn_detail_standard div.hn_table2 {
+    overflow-x: scroll;
+  }
+  div.hn_detail_standard div.hn_table2 table {
+    width: 100%;
+    min-width: 599px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-top: 2px solid #000;
+  }
+}/*# sourceMappingURL=sub2.css.map */
