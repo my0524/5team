@@ -1,1 +1,212 @@
 @use "../mixin.scss" as m;
+.search-btn{
+  border: none;
+  background: none;
+}
+
+.gs_head-visual{
+  width: 100%;
+  height: 360px;
+}
+
+.gs_section{
+  padding: 72px 0 120px;
+  background-color: #f7f7f8;
+  .gs_inner-wrap{
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  fieldset{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    form{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 581px;
+      margin: 0 auto;
+      label{
+        min-width: 70px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #111;
+      }
+      .search-select-box{
+        select{
+          border: none;
+          color: #333;
+          width: 110px;
+          padding: 16px 16px;
+        }
+      }
+      .search-box{
+        width: calc(100% - 110px);
+        position: relative;
+        input{
+          display: block;
+          border: none;
+          width: calc(100% - 9px);
+          height: 48px;
+          margin-left: 8px;
+          padding: 0 16px;
+          line-height: 48px;
+          box-sizing: border-box;
+          &:focus{
+            border: 0;
+            outline: none;
+          }
+        }
+        button{
+          position: absolute;
+          display: block;
+          bottom: 0;
+          right: 1px;
+          width: 60px;
+          height: 48px;
+          background-color: #FFF;
+          img{
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.gs_table-section{
+  table{
+    margin: 0 auto;
+  }
+  thead{
+    border-top: 1px solid #2a2f41;
+    border-bottom: 1px solid #2a2f41;
+    background-color: #f1f1f3;
+    @media (max-width: 480px){
+      display: none;
+    }
+    tr{
+      th{
+        font-size: 15px;
+        font-weight: 600;
+        color: #111111;
+        padding: 28px 20px;
+        line-height: 1.6;
+        letter-spacing: -0.38px;
+      }
+      th:nth-child(1){width: 7%;}
+      th:nth-child(2){width: auto;}
+      th:nth-child(3){width: 15%;}
+      th:nth-child(4){width: 15%;}
+      th:nth-child(5){width: 8%;}
+    }
+  }
+  tbody{
+    tr{
+      text-align: center;
+      @media (max-width:480px){
+        &:last-child{
+          border-bottom: 1px solid #2a2f41;
+        }
+      }
+      td:nth-child(1){
+        width: 7%;
+        @media (max-width:480px){
+          border-top: 1px solid #2a2f41;
+          padding: 10px 0 0 0;
+        }
+      }
+      td:nth-child(2){
+        text-align: left;
+        width: auto;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      td:nth-child(3){width: 15%;}
+      td:nth-child(4){width: 15%;}
+      td:nth-child(5){
+        width: 8%;
+        @media (max-width:480px){
+          padding: 0 0 10px 0;
+        }
+      }
+      td{
+        padding: 20px 32px;
+        color: #555555;
+        background-color: #FFF;
+        font-size: 15px;
+        line-height: 1.6;
+        word-break: keep-all;
+        letter-spacing: -0.38px;
+        border: 1px solid #f0f0f0;
+        border-top-color: #2a2f41;
+        border-left: none;
+        border-right: none;
+        @media #{m.$desktop}{
+          font-size: 14px;
+        }
+        @media (max-width:480px){
+          padding: 0;
+          width: 100% !important;
+          text-align: left;
+          display: block;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .table-btns-wrap{
+    width: 100%;
+    margin-top: 48px;
+    @media #{m.$tablets}{
+      display: none;
+    }
+    .table-btns{
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a{
+        display: block;
+        margin: 0 2px;
+        font-size: 12px;
+        height: 32px;
+        line-height: 32px;
+        width: 32px;
+        text-decoration: none;
+      }
+      .btn1{
+        background: url(../gs-imgs/arrow_paging_end_l.png) no-repeat 50% 50% #8D8F91;
+      }
+      .btn2{
+        background: url(../gs-imgs/arrow_paging_l.png)no-repeat 50% 50% #8D8F91;
+        margin-right: 30px;
+      }
+      .btn3{
+        background: #2a2f41;
+        transform: translateY(2px);
+        text-align: center;
+        color: #FFF;
+        margin: 0 2px;
+        font-weight: 700;
+      }
+      .btn4{
+        background: url(../gs-imgs/arrow_paging_r.png) no-repeat 50% 50% #2a2f41;
+        margin-left: 30px;
+      }
+      .btn5{
+        background: url(../gs-imgs/arrow_paging_end_r.png) no-repeat 50% 50% #2a2f41;
+      }
+    }
+  }
+}
+
+
+
