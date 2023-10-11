@@ -1,1 +1,98 @@
 @use "../mixin.scss" as m;
+
+body {background: #f7f7f8;}
+section.visual {
+  .my_title {
+    width: 100%;
+    height: 360px;
+    background: #777;
+    h2 {
+      height: 100%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 56px;
+      font-weight: 900;
+      @media #{m.$desktop}{
+        font-size: 40px;
+      }
+    }
+  }//my_title
+  .my_breadCrumb {
+    width: 100%;
+    height: 63px;
+    background: #999;
+    margin: 0 auto;
+    ul {
+      max-width: 1248px;
+      text-align: right;
+    }//ul
+  }//my_breadCrumb
+  .my_content {
+    max-width: 1248px;
+    margin: 0 auto;
+    .my_search {
+      width: 100%;
+      background: #ccc;
+      text-align: right;
+      vertical-align: middle;
+      input, select {
+        border: none;
+        padding: 16px;
+      }
+      @media #{m.$tablets}{
+        input, select {
+          width: 100%;
+        }
+      }
+    }//my_search
+    ul.my_list {
+      li {
+        width: 100%;
+        background: #fff;
+        a {
+          width: 100%;
+          padding : 31px 48px 31px 109px;
+          box-sizing: border-box;
+          border-bottom: 1px solid #f0f0f0;
+          display: block;
+          position: relative;
+          &::before {
+            content: 'Q';
+          }
+          &::after {
+            content: 'v';
+            position: absolute;
+            right: 48px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        .my_listA {
+          visibility: hidden;
+          padding: 0;
+          opacity: 0;
+          transition: all 0.5s;
+          &::before {
+            content: 'A';
+          }
+          &.active {
+            opacity: 1;
+            padding : 31px 48px 31px 109px;
+            visibility: visible;
+            // display: block;
+          }
+        }
+      }//li
+    }//ul.my_list
+  }//my_content
+  .my_pager {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    li {
+      display: inline-block;
+    }
+  }//my_pager
+}//section.visual
