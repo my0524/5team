@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>개인이용자</title>
+  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/sub/sub1.css">
+  <link rel="stylesheet" href="../css/sub/sub2.css">
+  <link rel="stylesheet" href="../css/sub/sub3.css">
+  <link rel="stylesheet" href="../css/sub/sub4.css">
+  <link rel="stylesheet" href="../css/sub/sub5.css">
+  <script type="module" src="../js/sub1.js"></script>
+  <script type="module" src="../js/sub2.js"></script>
+  <script type="module" src="../js/sub3.js"></script>
+  <script type="module" src="../js/sub4.js"></script>
+  <script type="module" src="../js/sub5.js"></script>
+  <title>Document</title>
 </head>
 <body>
   <header>
@@ -36,8 +49,53 @@
     </div>
   </header>
   <section class="visual">
-    <p>test</p>
+    <div class="my_title">
+      <h2>FAQ</h2>
+    </div>
+    <div class="my_breadCrumb">
+      <ul>
+        <li>HOME</li>
+        <li>이용안내</li>
+        <li>FAQ</li>
+      </ul>
+    </div><!-- my_breadCrumb -->
+    <div class="my_content">
+      <form class="my_search">
+        <select name="" id="">
+          <option value="all">전체</option>
+          <option value="title">제목</option>
+          <option value="body">내용</option>
+        </select>
+        <input type="text">
+        <button>검색</button>
+      </form><!-- form.my_search -->
+      <ul class="my_list">
+        <li>
+          <a href="#" class="my_listQ">
+            질문 제목
+          </a>
+          <div class="my_listA">
+            답변
+          </div>
+        </li>
+        <li>
+          <a href="#" class="my_listQ">
+            질문 제목
+          </a>
+          <div class="my_listA">
+            답변
+          </div>
+        </li>
+      </ul><!-- my_list -->
+    </div><!-- my_search -->
+    <ul class="my_pager">
+      <li>p</li>
+      <li>pp</li>
+      <li>1</li>
+      <li>2</li>
+      <li>n</li>
+      <li>nn</li>
+    </ul><!-- my_pager -->
   </section>
-  <footer></footer>
 </body>
 </html>
