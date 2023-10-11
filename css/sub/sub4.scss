@@ -1,1 +1,77 @@
 @use "../mixin.scss" as m;
+
+section.km_visual{
+  background: #f7f7f8;
+  div#center{
+    width: 1200px;
+    margin: 0 auto;
+    @media screen and (max-width:1200px){
+      width: 100%;
+      padding: 0 15px;
+    }
+    div.f{
+      margin-bottom: 50px;
+      h3{
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.6px;
+      }
+      b{
+        display: block;
+        font-size: 20px;
+        margin-bottom: 16px;
+        font-weight: inherit;
+      }
+      table{
+        width: 1200px;
+        border-collapse: collapse;
+        text-align: center;
+        @media screen and (max-width:1200px){
+          width: 100%;
+        }
+        tr{
+          th{
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            background: #f1f1f3;
+            padding: 28px 20px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            @media screen and (max-width:600px){
+              display: none;
+            }
+          }
+          td{
+            border-bottom: 1px solid #f0f0f0;
+            background: #fff;
+            padding: 20px 32px 20px 40px;
+            font-size: 15px;
+            @media screen and (max-width:600px){
+              display: block;
+              text-align: left;
+              padding: 15px 20px;
+              p{
+                display: block !important;
+                margin: 5px 0;
+              }
+            }
+            &.l1{
+              border-top: 1px solid #000;
+            }
+            &.l2{
+              border-top: 1px solid #000;
+              @media screen and (max-width:600px){
+                border-top: none;
+                border-bottom: 1px solid #000;;
+              }
+            }
+            p{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
